@@ -1,0 +1,4 @@
+#Thu Dec 28 13:27:00 EET 2023
+base.0=/Users/alaabdelhadi/StudioProjects/neptune_task/neptune_task/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
