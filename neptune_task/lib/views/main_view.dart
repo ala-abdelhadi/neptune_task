@@ -12,7 +12,6 @@ import 'package:neptune_task/views/song_player_view.dart';
 
 import '../generated/assets.dart';
 
-
 //mainPAge
 
 class MainPage extends StatefulWidget {
@@ -68,9 +67,9 @@ class _MainPageState extends State<MainPage> {
         return Get.width / 4.1;
 
       case 3:
-        return Get.width / 1.5;
+        return Get.width / 1.49;
       case 4:
-        return Get.width / 1.165;
+        return Get.width / 1.158;
       default:
         return Get.width / 22;
     }
@@ -107,8 +106,8 @@ class _MainPageState extends State<MainPage> {
             height: size.height * 0.06,
             child: ListView.separated(
                 separatorBuilder: (context, index) => SizedBox(
-                  width: Get.width / 7,
-                ),
+                      width: Get.width / 7,
+                    ),
                 scrollDirection: Axis.horizontal,
                 itemCount: tabs.length,
                 itemBuilder: (context, index) {
@@ -163,8 +162,7 @@ class _MainPageState extends State<MainPage> {
             filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
             child: Container(
               decoration: BoxDecoration(
-                color: Get
-                    .theme.bottomNavigationBarTheme.backgroundColor!
+                color: Get.theme.bottomNavigationBarTheme.backgroundColor!
                     .withOpacity(0.6),
                 borderRadius: BorderRadius.circular(10),
               ),
@@ -227,7 +225,7 @@ class _MainPageState extends State<MainPage> {
       height: 40,
       child: LinearProgressIndicator(
         value:
-        0.5, // Set the value between 0.0 and 1.0 to represent the progress
+            0.5, // Set the value between 0.0 and 1.0 to represent the progress
         backgroundColor: Get.theme.primaryColor,
         valueColor: AlwaysStoppedAnimation<Color>(
           Get.theme.colorScheme.secondary,
