@@ -25,7 +25,8 @@ class SongPlayerController extends GetxController with StateMixin {
 
     //FIXME : this must start from zero but it just for showing the progress bar faster
     progress =
-        Duration(minutes: (minutes / 2).floor(), seconds: (seconds / 2).ceil()).obs;
+        Duration(minutes: (minutes / 2).floor(), seconds: (seconds / 2).ceil())
+            .obs;
     startSong();
   }
 

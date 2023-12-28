@@ -238,18 +238,18 @@ class _MainPageState extends State<MainPage> {
   Widget pages(int current) {
     switch (current) {
       case 0:
-        return HomePage();
+        return const HomePage();
 
       case 1:
-        return SearchView();
+        return const SearchView();
 
       case 3:
-        return BroadCastView();
+        return const BroadCastView();
 
       case 4:
         return const SettingView();
       default:
-        return HomePage();
+        return const HomePage();
     }
   }
 }
